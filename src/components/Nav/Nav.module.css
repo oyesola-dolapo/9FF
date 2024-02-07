@@ -1,11 +1,15 @@
-.side-nav ul li a{
-    padding: .6rem 1.5rem;
+.logo {
+  filter: grayscale(100%);
 }
 
-.side-nav{
-    z-index: -1;
+.side-nav ul li a {
+  padding: 0.6rem 1.5rem;
 }
 
-.active{
-    background: color-mix(in srgb, black, transparent 90%);
+.side-nav {
+  z-index: -1;
+}
+
+.active {
+  background: color-mix(in srgb, black, transparent 90%);
 }
