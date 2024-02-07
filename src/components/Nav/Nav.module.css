@@ -1,0 +1,11 @@
+.side-nav ul li a{
+    padding: .6rem 1.5rem;
+}
+
+.side-nav{
+    z-index: -1;
+}
+
+.active{
+    background: color-mix(in srgb, black, transparent 90%);
+}
