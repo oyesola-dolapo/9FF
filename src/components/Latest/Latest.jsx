@@ -12,7 +12,7 @@ export default function Latest() {
         <button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <a
             href="#"
-            className="bg-white shadow-lg py-2 px-8 tracking-widest ">
+            className="bg-white shadow-lg py-4 px-8 tracking-widest ">
             SHOP LATEST
           </a>
         </button>
