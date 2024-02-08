@@ -43,7 +43,7 @@ export default function Nav() {
       </nav>
       {sideBar && (
         <nav
-          className={`${styles["side-nav"]} absolute flex flex-col top-0 left-0 w-[80%] h-screen bg-white pt-32 pb-12`}>
+          className={`${styles["side-nav"]} fixed flex flex-col top-0 left-0 w-[80%] h-full bg-white pt-32 pb-12`}>
           <ul>
             {links.map((link) => {
               return (
