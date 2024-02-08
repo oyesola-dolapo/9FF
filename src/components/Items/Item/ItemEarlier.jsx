@@ -4,37 +4,37 @@ export default function ItemEarlier() {
       id: 1,
       name: "FIGURE FUND$",
       price: "100 CAD",
-      image: "../../images/Items/Item-1.JPG",
+      image: "../../images/Items/Item-7.JPG",
     },
     {
       id: 2,
       name: "FIGURE FUND$",
       price: "100 CAD",
-      image: "../../images/Items/Item-2.JPG",
+      image: "../../images/Items/Item-10.JPG",
     },
     {
       id: 3,
       name: "FIGURE FUND$",
       price: "100 CAD",
-      image: "../../images/Items/Item-3.JPG",
+      image: "../../images/Items/Item-11.JPG",
     },
     {
       id: 4,
       name: "FIGURE FUND$",
       price: "100 CAD",
-      image: "../../images/Items/Item-4.JPG",
+      image: "../../images/Items/Item-10.JPG",
     },
     {
       id: 5,
       name: "FIGURE FUND$",
       price: "100 CAD",
-      image: "../../images/Items/Item-5.JPG",
+      image: "../../images/Items/Item-1.JPG",
     },
     {
       id: 6,
       name: "FIGURE FUND$",
       price: "100 CAD",
-      image: "../../images/Items/Item-6.JPG",
+      image: "../../images/Items/Item-2.JPG",
     },
   ];
   return (
