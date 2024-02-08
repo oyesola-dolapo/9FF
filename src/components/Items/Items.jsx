@@ -1,11 +1,12 @@
 import React from "react";
-import Item from "./Item/Item";
+import ItemLatest from "./Item/ItemLatest";
+import ItemEarlier from "./Item/ItemEarlier";
 
 const Items = () => {
   return (
     <div >
-      <h1 className="uppercase text-center text-2xl tracking-wider py-8">Latest Collection</h1>
-      <Item />
+      <ItemLatest />
+      <ItemEarlier />
     </div>
   );
 };

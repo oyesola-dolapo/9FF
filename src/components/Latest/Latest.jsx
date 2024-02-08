@@ -7,7 +7,7 @@ export default function Latest() {
         <img
           src="../../images/IMG_9840.JPG"
           alt=""
-          className={`${styles["latest-bg"]} opacity-[.3] w-full sm:h-[22rem]`}
+          className={`${styles["latest-bg"]} opacity-[.3] w-full sm:h-[22rem] md:h-full md:opacity-0`}
         />
         <button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <a

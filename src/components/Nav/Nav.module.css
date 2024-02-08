@@ -2,7 +2,7 @@
   filter: grayscale(100%);
 }
 
-.side-nav ul li a {
+.side-nav-links {
   padding: 0.6rem 1.5rem;
 }
 
