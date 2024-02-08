@@ -43,12 +43,12 @@ export default function ItemEarlier() {
         <h1 className="uppercase text-center text-2xl tracking-wider">
           Earlier Collection
         </h1>
-        <ul className="flex flex-wrap justify-center gap-4 mb-4">
+        <ul className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-4">
           {items.map((item) => {
             return (
               <li key={item.id}>
                 <a href="" className="flex flex-col gap-2">
-                  <div className="image-con bg-[#eaeaea] w-[10rem] h-[14rem] sm:w-[20rem] sm:h-[23rem] flex items-center justify-center">
+                  <div className="image-con bg-[#eaeaea] w-[11rem] h-[14rem] sm:w-[20rem] sm:h-[23rem] flex items-center justify-center">
                     <img src={item.image} alt="" />
                   </div>
                   <p className="name text-lg tracking-wider">{item.name}</p>
