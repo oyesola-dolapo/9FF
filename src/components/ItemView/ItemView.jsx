@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+import "./itemView.css";
 
 export default function ItemView({ items }) {
   const { id } = useParams();
@@ -14,6 +15,12 @@ export default function ItemView({ items }) {
     { size: "L" },
     { size: "XL" },
   ];
+
+  const active = () => {
+    const size = document.getElementById("size");
+    size.classList.add("active");
+    console.log('clicked')
+  };
 
   const item = items.find((item) => item.id === parseInt(id));
 
@@ -35,8 +42,12 @@ export default function ItemView({ items }) {
             {sizes.map((size) => {
               return (
                 <li
+                  id="size"
                   className=" border-2 border-black rounded-full w-14 h-8 mr-2 flex justify-center items-center"
-                  key={size.size}>
+                  key={size.size}
+                  onClick={() => {
+                    active();
+                  }}>
                   {size.size}
                 </li>
               );

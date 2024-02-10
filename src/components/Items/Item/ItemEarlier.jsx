@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function ItemEarlier({ items }) {
   return (
@@ -11,13 +12,15 @@ export default function ItemEarlier({ items }) {
           {items.map((item) => {
             return (
               <li key={item.id}>
-                <a href="" className="flex flex-col gap-2">
+                <Link
+                  to={`/ItemView/${item.id}`}
+                  className="flex flex-col gap-2">
                   <div className="image-con bg-[#eaeaea] w-[11rem] h-[14rem] sm:w-[20rem] sm:h-[23rem] flex items-center justify-center">
                     <img src={item.image} alt="" />
                   </div>
                   <p className="name text-lg tracking-wider">{item.name}</p>
                   <p className="price text-lg tracking-wider">{item.price}</p>
-                </a>
+                </Link>
               </li>
             );
           })}
