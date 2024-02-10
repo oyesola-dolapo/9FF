@@ -4,37 +4,43 @@
       "id": 1,
       "name": "FIGURE FUND$",
       "price": "100 CAD",
-      "image": "../../images/Items/Item-7.JPG"
+      "image": "../../images/Items/Item-7.JPG",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nisi similique natus quod inventore, aliquam amet cupiditate et! Architecto quidem asperiores necessitatibus accusamus a eligendi enim corrupti aliquam numquam? Id, tempore assumenda mollitia, eos totam incidunt ipsam possimus voluptatibus cumque quaerat facere, accusamus ut animi necessitatibus maiores nobis aliquid nam consectetur velit. A quibusdam repudiandae nostrum quam. Quo, similique. Eius magnam cumque, quae quia, doloribus ullam eos laboriosam omnis molestiae fugiat quisquam! Harum totam sit quaerat numquam quas commodi, cum deserunt laboriosam sint obcaecati cupiditate esse sequi porro non consectetur nisi rem molestias natus aliquam excepturi quo praesentium reprehenderit. Consequuntur."
     },
     {
       "id": 2,
       "name": "FIGURE FUND$",
       "price": "100 CAD",
-      "image": "../../images/Items/Item-10.JPG"
+      "image": "../../images/Items/Item-10.JPG",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nisi similique natus quod inventore, aliquam amet cupiditate et! Architecto quidem asperiores necessitatibus accusamus a eligendi enim corrupti aliquam numquam? Id, tempore assumenda mollitia, eos totam incidunt ipsam possimus voluptatibus cumque quaerat facere, accusamus ut animi necessitatibus maiores nobis aliquid nam consectetur velit. A quibusdam repudiandae nostrum quam. Quo, similique. Eius magnam cumque, quae quia, doloribus ullam eos laboriosam omnis molestiae fugiat quisquam! Harum totam sit quaerat numquam quas commodi, cum deserunt laboriosam sint obcaecati cupiditate esse sequi porro non consectetur nisi rem molestias natus aliquam excepturi quo praesentium reprehenderit. Consequuntur."
     },
     {
       "id": 3,
       "name": "FIGURE FUND$",
       "price": "100 CAD",
-      "image": "../../images/Items/Item-11.JPG"
+      "image": "../../images/Items/Item-11.JPG",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nisi similique natus quod inventore, aliquam amet cupiditate et! Architecto quidem asperiores necessitatibus accusamus a eligendi enim corrupti aliquam numquam? Id, tempore assumenda mollitia, eos totam incidunt ipsam possimus voluptatibus cumque quaerat facere, accusamus ut animi necessitatibus maiores nobis aliquid nam consectetur velit. A quibusdam repudiandae nostrum quam. Quo, similique. Eius magnam cumque, quae quia, doloribus ullam eos laboriosam omnis molestiae fugiat quisquam! Harum totam sit quaerat numquam quas commodi, cum deserunt laboriosam sint obcaecati cupiditate esse sequi porro non consectetur nisi rem molestias natus aliquam excepturi quo praesentium reprehenderit. Consequuntur."
     },
     {
       "id": 4,
       "name": "FIGURE FUND$",
       "price": "100 CAD",
-      "image": "../../images/Items/Item-10.JPG"
+      "image": "../../images/Items/Item-10.JPG",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nisi similique natus quod inventore, aliquam amet cupiditate et! Architecto quidem asperiores necessitatibus accusamus a eligendi enim corrupti aliquam numquam? Id, tempore assumenda mollitia, eos totam incidunt ipsam possimus voluptatibus cumque quaerat facere, accusamus ut animi necessitatibus maiores nobis aliquid nam consectetur velit. A quibusdam repudiandae nostrum quam. Quo, similique. Eius magnam cumque, quae quia, doloribus ullam eos laboriosam omnis molestiae fugiat quisquam! Harum totam sit quaerat numquam quas commodi, cum deserunt laboriosam sint obcaecati cupiditate esse sequi porro non consectetur nisi rem molestias natus aliquam excepturi quo praesentium reprehenderit. Consequuntur."
     },
     {
       "id": 5,
       "name": "FIGURE FUND$",
       "price": "100 CAD",
-      "image": "../../images/Items/Item-1.JPG"
+      "image": "../../images/Items/Item-1.JPG",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nisi similique natus quod inventore, aliquam amet cupiditate et! Architecto quidem asperiores necessitatibus accusamus a eligendi enim corrupti aliquam numquam? Id, tempore assumenda mollitia, eos totam incidunt ipsam possimus voluptatibus cumque quaerat facere, accusamus ut animi necessitatibus maiores nobis aliquid nam consectetur velit. A quibusdam repudiandae nostrum quam. Quo, similique. Eius magnam cumque, quae quia, doloribus ullam eos laboriosam omnis molestiae fugiat quisquam! Harum totam sit quaerat numquam quas commodi, cum deserunt laboriosam sint obcaecati cupiditate esse sequi porro non consectetur nisi rem molestias natus aliquam excepturi quo praesentium reprehenderit. Consequuntur."
     },
     {
       "id": 6,
       "name": "FIGURE FUND$",
       "price": "100 CAD",
-      "image": "../../images/Items/Item-2.JPG"
+      "image": "../../images/Items/Item-2.JPG",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nisi similique natus quod inventore, aliquam amet cupiditate et! Architecto quidem asperiores necessitatibus accusamus a eligendi enim corrupti aliquam numquam? Id, tempore assumenda mollitia, eos totam incidunt ipsam possimus voluptatibus cumque quaerat facere, accusamus ut animi necessitatibus maiores nobis aliquid nam consectetur velit. A quibusdam repudiandae nostrum quam. Quo, similique. Eius magnam cumque, quae quia, doloribus ullam eos laboriosam omnis molestiae fugiat quisquam! Harum totam sit quaerat numquam quas commodi, cum deserunt laboriosam sint obcaecati cupiditate esse sequi porro non consectetur nisi rem molestias natus aliquam excepturi quo praesentium reprehenderit. Consequuntur."
     }
   ],
 
