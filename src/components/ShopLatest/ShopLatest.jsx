@@ -4,12 +4,12 @@ import LatestItems from "./LatestItems/LatestItems";
 export default function ShopLatest() {
   const [items, setItems] = useState(null);
   useEffect(() => {
-    fetch("http://localhost:8000/items")
+    fetch("/data/items.json")
       .then((res) => {
         return res.json();
       })
       .then((data) => {
-        setItems(data);
+        setItems(data.items);
       });
   }, []);
   return (
