@@ -1,20 +1,10 @@
 import styles from "./Nav.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-export default function Nav() {
+export default function Nav({ links }) {
   const [menuBtn, setMenuBtn] = useState(true);
   const [sideBar, setSideBar] = useState("");
-  const links = [
-    {
-      title: "Home",
-      link: "/",
-    },
-    { title: "Shop Latest", link: "/ShopLatest" },
-    { title: "All Products" },
-    { title: "All Categories" },
-    { title: "FAQS" },
-  ];
   const openMenu = () => {
     setMenuBtn(!menuBtn);
     setSideBar(!sideBar);
@@ -49,24 +39,26 @@ export default function Nav() {
       {sideBar && (
         <nav
           className={`${styles["side-nav"]} fixed flex flex-col top-0 left-0 w-[80%] h-full bg-white pt-32 pb-12`}>
-          <ul>
-            {links.map((link) => {
-              return (
-                <li className="block" key={link.title}>
-                  <Link
-                    to={link.link}
-                    onClick={() => {
-                      closeMenu();
-                    }}
-                    className={`${styles[link.class]} ${
-                      styles["side-nav-links"]
-                    } inline-block w-full`}>
-                    {link.title}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
+          {links && (
+            <ul>
+              {links.map((link) => {
+                return (
+                  <li className="block" key={link.title}>
+                    <Link
+                      to={link.link}
+                      onClick={() => {
+                        closeMenu();
+                      }}
+                      className={`${styles[link.class]} ${
+                        styles["side-nav-links"]
+                      } inline-block w-full`}>
+                      {link.title}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
           <div className="socials ml-6 mt-auto">
             <ul className="text-2xl flex gap-4">
               <li>

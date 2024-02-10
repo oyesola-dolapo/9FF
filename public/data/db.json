@@ -36,5 +36,16 @@
       "price": "100 CAD",
       "image": "../../images/Items/Item-2.JPG"
     }
+  ],
+
+  "links": [
+    {
+      "title": "Home",
+      "link": "/"
+    },
+    { "title": "Shop Latest", "link": "/ShopLatest" },
+    { "title": "All Products" },
+    { "title": "All Categories" },
+    { "title": "FAQS" }
   ]
 }

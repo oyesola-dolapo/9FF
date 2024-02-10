@@ -1,19 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Nav.module.css";
+import { Link } from "react-router-dom";
 
-export default function FullNav() {
-  const links = [
-    {
-      title: "Home",
-      class: "active",
-    },
-    {
-      title: "Shop Latest",
-    },
-    { title: "All Products" },
-    { title: "All Categories" },
-    { title: "FAQS" },
-  ];
+export default function FullNav({ links }) {
   return (
     <nav className="hidden lg:inline-block w-full py-4 px-6 shadow-lg flex- flex-col">
       <div className="flex items-center justify-between">
@@ -25,17 +14,19 @@ export default function FullNav() {
         />
         <i className="fa-solid fa-cart-shopping"></i>
       </div>
-      <ul className="flex gap-6 w-max my-0 mx-auto mt-6">
-        {links.map((link) => {
-          return (
-            <li key={link.title}>
-              <a href={link.link} key={link.title}>
-                {link.title}
-              </a>
-            </li>
-          );
-        })}
-      </ul>
+      {links && (
+        <ul className="flex gap-6 w-max my-0 mx-auto mt-6">
+          {links.map((link) => {
+            return (
+              <li key={link.title}>
+                <Link to={link.link} key={link.title}>
+                  {link.title}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </nav>
   );
 }
