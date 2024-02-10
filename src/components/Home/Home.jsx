@@ -1,9 +1,9 @@
-import Latest from "../Latest/Latest";
+import Latest from "../Latest/Latest.jsx";
 import Items from "../Items/Items.jsx";
 
-export default function Main() {
+export default function Home() {
   return (
-    <main>
+    <main>  
       <Latest />
       <Items />
     </main>

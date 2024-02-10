@@ -1,9 +1,6 @@
-export default function ItemLatest({ items }) {
+export default function LatestItems({ items }) {
   return (
-    <div className="h-max py-8 flex flex-col gap-4">
-      <h1 className="uppercase text-center text-2xl tracking-wider">
-        Latest Collection
-      </h1>
+    <div>
       <ul className="flex flex-wrap justify-center gap-2 lg:gap-4 mb-4">
         {items.map((item) => {
           return (
@@ -19,13 +16,6 @@ export default function ItemLatest({ items }) {
           );
         })}
       </ul>
-      <button className="block">
-        <a
-          href="#"
-          className="text-white bg-black py-2 px-6 shadow-xl mt-4 tracking-wider">
-          View All
-        </a>
-      </button>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import styles from "./Nav.module.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   const [menuBtn, setMenuBtn] = useState(true);
@@ -7,9 +8,9 @@ export default function Nav() {
   const links = [
     {
       title: "Home",
-      class: "active",
+      link: "/",
     },
-    { title: "Shop Latest" },
+    { title: "Shop Latest", link: "/ShopLatest" },
     { title: "All Products" },
     { title: "All Categories" },
     { title: "FAQS" },
@@ -17,6 +18,10 @@ export default function Nav() {
   const openMenu = () => {
     setMenuBtn(!menuBtn);
     setSideBar(!sideBar);
+  };
+  const closeMenu = () => {
+    setSideBar(!sideBar);
+    setMenuBtn(!menuBtn);
   };
   return (
     <div className="relative z-10 lg:hidden">
@@ -48,13 +53,16 @@ export default function Nav() {
             {links.map((link) => {
               return (
                 <li className="block" key={link.title}>
-                  <a
-                    href=""
+                  <Link
+                    to={link.link}
+                    onClick={() => {
+                      closeMenu();
+                    }}
                     className={`${styles[link.class]} ${
                       styles["side-nav-links"]
                     } inline-block w-full`}>
                     {link.title}
-                  </a>
+                  </Link>
                 </li>
               );
             })}
@@ -63,13 +71,13 @@ export default function Nav() {
             <ul className="text-2xl flex gap-4">
               <li>
                 <a href="#">
-                  <i class="fa-brands fa-instagram"></i>
+                  <i className="fa-brands fa-instagram"></i>
                 </a>
               </li>
 
               <li>
                 <a href="#">
-                  <i class="fa-brands fa-tiktok"></i>
+                  <i className="fa-brands fa-tiktok"></i>
                 </a>
               </li>
             </ul>

@@ -1,9 +1,7 @@
-import React from "react";
-import ItemLatest from "./Item/ItemLatest";
-import ItemEarlier from "./Item/ItemEarlier";
 import { useState, useEffect } from "react";
+import LatestItems from "./LatestItems/LatestItems";
 
-const Items = () => {
+export default function ShopLatest() {
   const [items, setItems] = useState(null);
   useEffect(() => {
     fetch("http://localhost:8000/items")
@@ -16,14 +14,8 @@ const Items = () => {
   }, []);
   return (
     <div>
-      {items && (
-        <div>
-          <ItemLatest items={items} />
-          <ItemEarlier items={items} />
-        </div>
-      )}
+      <h1 className="p-6 text-2xl tracking-wider  font-medium">Latest Drop</h1>
+      {items && <LatestItems items={items} />}
     </div>
   );
-};
-
-export default Items;
+}

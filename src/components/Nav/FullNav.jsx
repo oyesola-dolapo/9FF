@@ -7,7 +7,9 @@ export default function FullNav() {
       title: "Home",
       class: "active",
     },
-    { title: "Shop Latest" },
+    {
+      title: "Shop Latest",
+    },
     { title: "All Products" },
     { title: "All Categories" },
     { title: "FAQS" },
@@ -27,7 +29,7 @@ export default function FullNav() {
         {links.map((link) => {
           return (
             <li key={link.title}>
-              <a href="#" key={link.title}>
+              <a href={link.link} key={link.title}>
                 {link.title}
               </a>
             </li>

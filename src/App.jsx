@@ -1,19 +1,28 @@
 import { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./components/Home/Home";
+import ShopLatest from "./components/ShopLatest/ShopLatest";
+import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav/Nav";
 import FullNav from "./components/Nav/FullNav";
-import Main from "./components/Main/Main";
-import Footer from "./components/Footer/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <Nav />
-      <FullNav />
-      <Main />
-      <Footer />
-    </>
+    <Router>
+      <div>
+        <Nav />
+        <FullNav />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/ShopLatest" element={<ShopLatest />}></Route>
+          </Routes>
+        </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
