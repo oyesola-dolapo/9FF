@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function FullNav({ links }) {
   return (
-    <nav className="hidden lg:inline-block w-full py-4 px-6 shadow-lg flex- flex-col">
+    <nav className="hidden lg:inline-block w-full py-4 px-6 shadow-lg flex- flex-col xl:shadow-none">
       <div className="flex items-center justify-between">
         <i className="fa-solid fa-magnifying-glass"></i>
         <img

@@ -23,7 +23,7 @@ function App() {
 
   return (
     <Router>
-      <div>
+      <div className="xl:w-[80%] xl:mx-auto">
         <Nav links={links} />
         <FullNav links={links} />
         <div className="content">

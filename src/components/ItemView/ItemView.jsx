@@ -26,7 +26,7 @@ export default function ItemView({ items }) {
 
   return (
     <div className="flex flex-col items-center pt-8 sm:flex-row sm:items-start sm:gap-2 px-4">
-      <div className="image-container bg-[#eaeaea] w-[90%] h-[23rem] flex justify-center items-center">
+      <div className="image-container bg-[#eaeaea] w-[90%] h-[23rem] flex justify-center items-center lg:h-[30rem]">
         <img src={item.image} alt="" />
       </div>
       <div className="product-info px-4 w-full pt-4 sm:pt-0">
