@@ -8,6 +8,9 @@ export default function ItemView({ items }) {
   if (!items || !Array.isArray(items)) {
     return <div>Loading...</div>;
   }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const sizes = [
     { size: "XS" },
     { size: "S" },
@@ -16,10 +19,10 @@ export default function ItemView({ items }) {
     { size: "XL" },
   ];
 
-  const active = () => {
-    const size = document.getElementById("size");
-    size.classList.add("active");
-    console.log('clicked')
+  const [activeSize, setActiveSize] = useState(null);
+
+  const setActive = (size) => {
+    setActiveSize(size);
   };
 
   const item = items.find((item) => item.id === parseInt(id));
@@ -43,11 +46,11 @@ export default function ItemView({ items }) {
               return (
                 <li
                   id="size"
-                  className=" border-2 border-black rounded-full w-14 h-8 mr-2 flex justify-center items-center"
+                  className={`${
+                    activeSize === size.size ? "active" : ""
+                  } border-2 border-black rounded-full w-14 h-8 mr-2 flex justify-center items-center`}
                   key={size.size}
-                  onClick={() => {
-                    active();
-                  }}>
+                  onClick={() => setActive(size.size)}>
                   {size.size}
                 </li>
               );

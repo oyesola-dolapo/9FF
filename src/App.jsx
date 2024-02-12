@@ -35,6 +35,9 @@ function App() {
             <Route
               path="/ItemView/:id"
               element={<ItemView items={items} />}></Route>
+            <Route
+              path="/ShopLatest"
+              element={<ShopLatest items={items} />}></Route>
           </Routes>
         </div>
         <Footer />

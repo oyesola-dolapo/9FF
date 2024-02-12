@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 export default function ItemLatest({ items }) {
+  
   return (
     <div className="h-max py-8 flex flex-col gap-4">
       <h1 className="uppercase text-center text-2xl tracking-wider">
@@ -22,11 +23,11 @@ export default function ItemLatest({ items }) {
         })}
       </ul>
       <button className="block">
-        <a
-          href="#"
+        <Link
+          to="/ShopLatest"
           className="text-white bg-black py-2 px-6 shadow-xl mt-4 tracking-wider">
           View All
-        </a>
+        </Link>
       </button>
     </div>
   );
