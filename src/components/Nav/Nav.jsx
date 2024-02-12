@@ -62,7 +62,7 @@ export default function Nav({ links }) {
           <div className="socials ml-6 mt-auto">
             <ul className="text-2xl flex gap-4">
               <li>
-                <a href="#">
+                <a href="https://www.instagram.com/9ff.clothing?igsh=aTJrY2pnOTBldDdr">
                   <i className="fa-brands fa-instagram"></i>
                 </a>
               </li>
